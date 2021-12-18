@@ -4,7 +4,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 import Static.Arabic.Controller.Controller;
-import Static.Arabic.Model.Handler.Model;
+import Static.Arabic.Model.ModelClass;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -34,17 +34,17 @@ public class View extends Pane implements PropertyChangeListener {
 	private Button back;
 	private Button select;
 	private FileChooser fileChooser;
-	private Model model;
+	private ModelClass model;
 	private Controller controller;
 
 //step 1
-	public View(Controller controller, Model model) {
+	public View(Controller controller, ModelClass model) {
 
 		this.initialize(controller, model);
 	}
 
 // step 2 fun defi
-	private void initialize(Controller controller, Model model) {
+	private void initialize(Controller controller, ModelClass model) {
 //step 3
 		this.controller = controller;
 		this.model = model;

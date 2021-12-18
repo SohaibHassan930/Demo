@@ -1,16 +1,16 @@
-package Static.Arabic.Model.Handler;
+package Static.Arabic.Model;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public class Model {
+public class ModelClass {
 	private String bookName;
 	private String bookId;
 	private String bookAuthor;
 	private String bookDescription;
 	private PropertyChangeSupport notifier;
 
-	public Model() {
+	public ModelClass() {
 		super();
 		notifier = new PropertyChangeSupport(this);
 
