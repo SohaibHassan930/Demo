@@ -1,6 +1,6 @@
 package Static.Arabic.Controller;
 
-import Static.Arabic.Model.Handler.Model;
+import Static.Arabic.Model.ModelClass;
 import Static.Arabic.View.View;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -8,12 +8,12 @@ import javafx.stage.Stage;
 
 public class Controller implements Show {
 //step 1
-	private Model model;
+	private ModelClass model;
 	private Parent dashboardView;
 
 //step 2
 	public Controller() {
-		this.model = new Model();
+		this.model = new ModelClass();
 	}
 
 	public void addBookDetails(String bookName, String bookId, String bookAuthorName, String bookDescriptions) {
